@@ -227,7 +227,7 @@ let ICUWard = {
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
 let spotsLeft = ICUWard.room1.capacity - ICUWard.room1.patients.length + ICUWard.room2.capacity - ICUWard.room2.patients.length
-let atFullCapacity = spotsLeft === 0
+let atFullCapacity = spotsLeft < 1
 
 ////////////////////////////////////////////////////////////////////////
 
