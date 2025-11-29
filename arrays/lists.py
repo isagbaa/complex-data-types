@@ -7,7 +7,7 @@
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-newList = None
+newList = ["isagba"]
 
 ########################################################################
 
@@ -31,7 +31,8 @@ appendElement = "ok?"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-listCopy = None
+listCopy = list1[:]       ##################################list1.copy()
+listCopy.append(appendElement)
 
 ########################################################################
 
@@ -54,7 +55,8 @@ cycleMe = list(range(1, random.randint(5, 15)))
 cycleMeCopy = list(cycleMe)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
-
+cycleMe.append(cycleMe.pop(0))
+cycleMe.append(cycleMe.pop(0))
 
 
 ########################################################################
@@ -74,7 +76,7 @@ keepMe = clearJustMe
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-
+clearJustMe = []
 
 ########################################################################
 
@@ -92,7 +94,7 @@ loseMe = clearAll
 #  so that it too reference the same emptied list. Do nothing to 'loseMe'.
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
-
+clearAll.clear()
 
 
 ########################################################################
@@ -111,7 +113,9 @@ allScoresCopy = list(allScores)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-top3Scores = None
+allScores.sort(reverse=True)
+top3Scores = allScores[0:3]
+
 
 ########################################################################
 
